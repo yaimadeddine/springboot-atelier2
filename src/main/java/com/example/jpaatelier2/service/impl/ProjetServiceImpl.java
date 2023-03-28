@@ -36,10 +36,7 @@ public class ProjetServiceImpl implements ProjetService {
             p.setDescription(projet.getDescription());
             projetRepository.save(p);
         }
-
-
     }
-
     @Override
     public Projet getProjet(long idProjet) {
         return projetRepository.findByIdProjet(idProjet);

@@ -26,5 +26,4 @@ public interface ProjetRepository extends JpaRepository<Projet,Long> {
 
     @Query(value = "select p from ProjetDev p where idProjet=:idP")
     ProjetDev getProjetDev(@Param("idP")long id);
-
 }
